@@ -6,4 +6,4 @@ helm:
   releaseName: lh-crd
   version: 101.2.0+up1.4.0 
 dependsOn:
-- name: LHGitRepo-bundledependency-lh-crd
+- name: lhgitrepo-lh-crd
