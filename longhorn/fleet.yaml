@@ -7,4 +7,4 @@ helm:
   version: "100.2.0+up1.3.0"
   #version: "101.1.0+up1.3.2"
 dependsOn:
-- name: lhgitrepo-lh-crd
+- name: lhgitrepo-longhorn-crd
