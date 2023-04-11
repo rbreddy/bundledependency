@@ -1,7 +1,6 @@
 defaultNamespace: longhorn-system
-
 helm:
   chart: longhorn-crd
   repo: https://charts.rancher.io
   releaseName: lh-crd
-  version:  101.1.0+up1.3.2
+  version: "100.2.3+up1.3.2"
