@@ -4,6 +4,6 @@ helm:
   repo: https://charts.rancher.io
   releaseName: longhorn
   #version: "100.1.1+up1.2.3"
-  version: "100.2.3+up1.3.2"
+  version: "100.2.2+up1.3.1"
 dependsOn:
 - name: lhgitrepo-lh-crd
