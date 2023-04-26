@@ -5,4 +5,4 @@ helm:
   releaseName: logging
   version: 100.0.1+up3.15.0
   values: 
-    clustertype: global.fleet.clusterLabels.clustertype
+    engine: global.fleet.clusterLabels.clustertype
