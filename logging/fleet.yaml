@@ -6,3 +6,5 @@ helm:
   version: 100.0.1+up3.15.0
   values: 
     engine: global.fleet.clusterLabels.clustertype
+dependsOn:
+- name: labeling-logging-crd
