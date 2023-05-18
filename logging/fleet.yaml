@@ -7,4 +7,4 @@ helm:
   values: 
     engine: global.fleet.clusterLabels.clustertype
 dependsOn:
-- name: 	labeling-logging-crd-logging-crd
+- name: labeling-logging-crd-logging-crd
