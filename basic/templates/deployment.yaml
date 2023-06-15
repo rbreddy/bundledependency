@@ -13,7 +13,7 @@ spec:
   template:
     metadata:
       labels:
-        app: nginx
+        app: nginx-rancher
     spec:
       containers:
       - name: nginx
