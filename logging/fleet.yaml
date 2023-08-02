@@ -2,9 +2,17 @@ defaultNamespace: cattle-logging-system
 helm:
   chart: rancher-logging
   repo: https://charts.rancher.io
-  releaseName: logging
+  releaseName: rancher-logging
   version: 100.1.3+up3.17.7
   values: 
     engine: global.fleet.clusterLabels.clustertype
+diff:
+  comparePatches:
+  - apiVersion: logging.banzaicloud.io/v1beta1
+    kind: Logging
+    name: rancher-logging
+    operations:
+    - {"op": "add", "path": "/spec/fluentbit", "value": '{resources":{"requests":{"cpu":"100m"}}}'}
+    - {"op": "add", "path": "/spec/fluentd", "value": '{resources":{"requests":{"cpu":"100m"}}}'}
 dependsOn:
 - name: logging-logging-crd
