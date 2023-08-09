@@ -1,4 +1,4 @@
-apiVersion: logging.banzaicloud.io/v1
+apiVersion: logging.banzaicloud.io/v1beta1
 kind: ClusterFlow
 metadata:
   name: elastic-flow-caca-maxima
