@@ -10,7 +10,7 @@ helm:
 targetCustomizations:
 - name: csi-svil-nivola-vc1
   kustomize:
-    dir: overlay/svil
+    dir: overlay
 diff:
   comparePatches:
   - apiVersion: logging.banzaicloud.io/v1beta1
