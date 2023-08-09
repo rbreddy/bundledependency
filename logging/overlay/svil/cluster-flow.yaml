@@ -5,4 +5,4 @@ metadata:
   namespace: cattle-logging-system
 spec:
   globalOutputRefs:
-  - elasticsearch-log
+  - file-output
