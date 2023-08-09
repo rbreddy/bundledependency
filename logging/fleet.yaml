@@ -6,6 +6,11 @@ helm:
   version: 100.1.3+up3.17.7
   values: 
     engine: global.fleet.clusterLabels.clustertype
+
+targetCustomizations:
+- name: csi-svil-nivola-vc1
+  kustomize:
+    dir: overlay/svil
 diff:
   comparePatches:
   - apiVersion: logging.banzaicloud.io/v1beta1
