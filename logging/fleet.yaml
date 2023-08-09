@@ -8,7 +8,7 @@ helm:
   #  engine: global.fleet.clusterLabels.clustertype
 
 targetCustomizations:
-- name: csi-svil-nivola-vc1
+- name: molmedo
   kustomize:
     dir: overlay
 diff:
