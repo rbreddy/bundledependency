@@ -1,8 +1,337 @@
 apiVersion: logging.banzaicloud.io/v1beta1
 kind: ClusterFlow
 metadata:
-  name: elastic-flow-caca-maxima
+  name: test
+  annotations:
+    {}
+    #  key: string
+  labels:
+    {}
+    #  key: string
   namespace: cattle-logging-system
 spec:
   globalOutputRefs:
-  - file-output
+    - file-output
+#    - string
+#  filters:
+#    - concat:
+#        continuous_line_regexp: string
+#        flush_interval: int
+#        keep_partial_key: boolean
+#        keep_partial_metadata: string
+#        key: string
+#        multiline_end_regexp: string
+#        multiline_start_regexp: string
+#        n_lines: int
+#        partial_key: string
+#        partial_value: string
+#        separator: string
+#        stream_identity_key: string
+#        timeout_label: string
+#        use_first_timestamp: boolean
+#        use_partial_metadata: string
+#      dedot:
+#        de_dot_nested: boolean
+#        de_dot_separator: string
+#      detectExceptions:
+#        force_line_breaks: boolean
+#        languages:
+#          - string
+#        max_bytes: int
+#        max_lines: int
+#        message: string
+#        multiline_flush_interval: string
+#        remove_tag_prefix: string
+#        stream: string
+#      elasticsearch_genid:
+#        hash_id_key: string
+#        hash_type: string
+#        include_tag_in_seed: boolean
+#        include_time_in_seed: boolean
+#        record_keys: string
+#        separator: string
+#        use_entire_record: boolean
+#        use_record_as_seed: boolean
+#      enhanceK8s:
+#        api_groups:
+#          - string
+#        bearer_token_file: string
+#        ca_file:
+#          mountFrom:
+#            secretKeyRef:
+#              key: string
+#              name: string
+#              optional: boolean
+#          value: string
+#          valueFrom:
+#            secretKeyRef:
+#              key: string
+#              name: string
+#              optional: boolean
+#        cache_refresh: int
+#        cache_refresh_variation: int
+#        cache_size: int
+#        cache_ttl: int
+#        client_cert:
+#          mountFrom:
+#            secretKeyRef:
+#              key: string
+#              name: string
+#              optional: boolean
+#          value: string
+#          valueFrom:
+#            secretKeyRef:
+#              key: string
+#              name: string
+#              optional: boolean
+#        client_key:
+#          mountFrom:
+#            secretKeyRef:
+#              key: string
+#              name: string
+#              optional: boolean
+#          value: string
+#          valueFrom:
+#            secretKeyRef:
+#              key: string
+#              name: string
+#              optional: boolean
+#        core_api_versions:
+#          - string
+#        data_type: string
+#        in_namespace_path:
+#          - string
+#        in_pod_path:
+#          - string
+#        kubernetes_url: string
+#        secret_dir: string
+#        ssl_partial_chain: boolean
+#        verify_ssl: boolean
+#      geoip:
+#        backend_library: string
+#        geoip_2_database: string
+#        geoip_database: string
+#        geoip_lookup_keys: string
+#        records:
+#            
+#        skip_adding_null_record: boolean
+#      grep:
+#        and:
+#          - exclude:
+#              - key: string
+#                pattern: string
+#            regexp:
+#              - key: string
+#                pattern: string
+#        exclude:
+#          - key: string
+#            pattern: string
+#        or:
+#          - exclude:
+#              - key: string
+#                pattern: string
+#            regexp:
+#              - key: string
+#                pattern: string
+#        regexp:
+#          - key: string
+#            pattern: string
+#      kube_events_timestamp:
+#        mapped_time_key: string
+#        timestamp_fields:
+#          - string
+#      parser:
+#        emit_invalid_record_to_error: boolean
+#        hash_value_field: string
+#        inject_key_prefix: string
+#        key_name: string
+#        parse:
+#          type: string
+#          custom_pattern_path: string
+#          delimiter: string
+#          delimiter_pattern: string
+#          estimate_current_event: boolean
+#          expression: string
+#          format: string
+#          format_firstline: string
+#          grok_failure_key: string
+#          grok_name_key: string
+#          grok_pattern: string
+#          grok_patterns:
+#            - keep_time_key: boolean
+#              name: string
+#              pattern: string
+#              time_format: string
+#              time_key: string
+#              timezone: string
+#          keep_time_key: boolean
+#          keys: string
+#          label_delimiter: string
+#          local_time: boolean
+#          multi_line_start_regexp: string
+#          multiline:
+#            - string
+#          null_empty_string: boolean
+#          null_value_pattern: string
+#          patterns:
+#            - type: string
+#              estimate_current_event: boolean
+#              expression: string
+#              format: string
+#              keep_time_key: boolean
+#              local_time: boolean
+#              null_empty_string: boolean
+#              null_value_pattern: string
+#              time_format: string
+#              time_key: string
+#              time_type: string
+#              timezone: string
+#              types: string
+#              utc: boolean
+#          time_format: string
+#          time_key: string
+#          time_type: string
+#          timezone: string
+#          types: string
+#          utc: boolean
+#        parsers:
+#          - type: string
+#            custom_pattern_path: string
+#            delimiter: string
+#            delimiter_pattern: string
+#            estimate_current_event: boolean
+#            expression: string
+#            format: string
+#            format_firstline: string
+#            grok_failure_key: string
+#            grok_name_key: string
+#            grok_pattern: string
+#            grok_patterns:
+#              - keep_time_key: boolean
+#                name: string
+#                pattern: string
+#                time_format: string
+#                time_key: string
+#                timezone: string
+#            keep_time_key: boolean
+#            keys: string
+#            label_delimiter: string
+#            local_time: boolean
+#            multi_line_start_regexp: string
+#            multiline:
+#              - string
+#            null_empty_string: boolean
+#            null_value_pattern: string
+#            patterns:
+#              - type: string
+#                estimate_current_event: boolean
+#                expression: string
+#                format: string
+#                keep_time_key: boolean
+#                local_time: boolean
+#                null_empty_string: boolean
+#                null_value_pattern: string
+#                time_format: string
+#                time_key: string
+#                time_type: string
+#                timezone: string
+#                types: string
+#                utc: boolean
+#            time_format: string
+#            time_key: string
+#            time_type: string
+#            timezone: string
+#            types: string
+#            utc: boolean
+#        remove_key_name_field: boolean
+#        replace_invalid_sequence: boolean
+#        reserve_data: boolean
+#        reserve_time: boolean
+#      prometheus:
+#        labels:  key: string
+#        metrics:
+#          - type: string
+#            buckets: string
+#            desc: string
+#            key: string
+#            labels:  key: string
+#            name: string
+#      record_modifier:
+#        char_encoding: string
+#        prepare_value: string
+#        records:
+#            
+#        remove_keys: string
+#        replaces:
+#          - expression: string
+#            key: string
+#            replace: string
+#        whitelist_keys: string
+#      record_transformer:
+#        auto_typecast: boolean
+#        enable_ruby: boolean
+#        keep_keys: string
+#        records:
+#            
+#        remove_keys: string
+#        renew_record: boolean
+#        renew_time_key: string
+#      stdout:
+#        output_type: string
+#      sumologic:
+#        collector_key_name: string
+#        collector_value: string
+#        exclude_container_regex: string
+#        exclude_facility_regex: string
+#        exclude_host_regex: string
+#        exclude_namespace_regex: string
+#        exclude_pod_regex: string
+#        exclude_priority_regex: string
+#        exclude_unit_regex: string
+#        log_format: string
+#        source_category: string
+#        source_category_key_name: string
+#        source_category_prefix: string
+#        source_category_replace_dash: string
+#        source_host: string
+#        source_host_key_name: string
+#        source_name: string
+#        source_name_key_name: string
+#        tracing_annotation_prefix: string
+#        tracing_container_name: string
+#        tracing_format: boolean
+#        tracing_host: string
+#        tracing_label_prefix: string
+#        tracing_namespace: string
+#        tracing_pod: string
+#        tracing_pod_id: string
+#      tag_normaliser:
+#        format: string
+#      throttle:
+#        group_bucket_limit: int
+#        group_bucket_period_s: int
+#        group_drop_logs: boolean
+#        group_key: string
+#        group_reset_rate_s: int
+#        group_warning_delay_s: int
+#  loggingRef: string
+#  match:
+#    - exclude:
+#        container_names:
+#          - string
+#        hosts:
+#          - string
+#        labels:  key: string
+#        namespaces:
+#          - string
+#      select:
+#        container_names:
+#          - string
+#        hosts:
+#          - string
+#        labels:  key: string
+#        namespaces:
+#          - string
+#  outputRefs:
+#    - string
+#  selectors:  key: string
