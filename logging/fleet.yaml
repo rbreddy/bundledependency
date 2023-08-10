@@ -11,6 +11,9 @@ targetCustomizations:
 - name: molmedo
   kustomize:
     dir: overlay
+  clusterSelector:
+    matchLabels:
+      management.cattle.io/cluster-display-name: molmedo
 diff:
   comparePatches:
   - apiVersion: logging.banzaicloud.io/v1beta1
