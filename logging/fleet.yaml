@@ -22,5 +22,5 @@ diff:
     operations:
     - {"op": "add", "path": "/spec/fluentbit", "value": '{resources":{"requests":{"cpu":"100m"}}}'}
     - {"op": "add", "path": "/spec/fluentd", "value": '{resources":{"requests":{"cpu":"100m"}}}'}
-dependsOn:
-- name: logging-logging-crd
+#dependsOn:
+#- name: logging-logging-crd
