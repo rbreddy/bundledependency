@@ -13,7 +13,7 @@ targetCustomizations:
     dir: overlay
   clusterSelector:
     matchLabels:
-      management.cattle.io/cluster-display-name: molmedo
+      management.cattle.io/cluster-display-name: ekscluster
 diff:
   comparePatches:
   - apiVersion: logging.banzaicloud.io/v1beta1
