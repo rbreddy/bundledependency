@@ -16,7 +16,7 @@ spec:
         app: nginx-rancherhello
     spec:
       containers:
-      - name: nginxhello
+      - name: nginxhelloasdadsa
         image: rancher/hello-world
         ports:
         - containerPort: 80
