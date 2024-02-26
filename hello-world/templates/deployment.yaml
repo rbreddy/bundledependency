@@ -17,6 +17,6 @@ spec:
     spec:
       containers:
       - name: nginxhelloasdadsa
-        image: rancher/hello-world
+        image: nginx
         ports:
         - containerPort: 80
