@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   namespace: hello
-  name: 12nginx-helloworld
+  name: nginx-helloworld
   labels:
     app: nginx-rancherhello
 spec:
