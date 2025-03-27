@@ -3,7 +3,7 @@ helm:
   chart: rancher-logging
   repo: https://charts.rancher.io
   releaseName: rancher-logging
-  version: 105.2.2+up4.10.0-rancher.1
+  version: 105.2.1+up4.10.0
   #values: 
   #  engine: global.fleet.clusterLabels.clustertype
 
