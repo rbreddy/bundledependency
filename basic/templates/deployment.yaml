@@ -9,7 +9,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nginx-rancher
+      app: nginx-rancher123
   template:
     metadata:
       labels:
