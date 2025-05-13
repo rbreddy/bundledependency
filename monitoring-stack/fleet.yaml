@@ -3,7 +3,7 @@ defaultNamespace: monitoring
 helm:
   repo: https://prometheus-community.github.io/helm-charts
   chart: kube-prometheus-stack
-  version: "58.0.0"
+  version: "58.0.0" # Verify latest
   releaseName: prometheus-stack-main
   values:
     alertmanager:
@@ -27,10 +27,9 @@ helm:
         storageClassName: "standard"
         accessModes:
           - ReadWriteOnce
-        size: "512Mi" # Reduced from 10Gi
+        size: "512Mi"
     prometheus:
       enabled: true
-      # For Prometheus, if you enable its persistence, you'd also reduce it here:
       # prometheusSpec:
       #   storageSpec:
       #     volumeClaimTemplate:
@@ -39,6 +38,6 @@ helm:
       #         accessModes: ["ReadWriteOnce"]
       #         resources:
       #           requests:
-      #             storage: "512Mi" # Reduced
+      #             storage: "512Mi"
   waitForJobs: true
   timeoutSeconds: 900
