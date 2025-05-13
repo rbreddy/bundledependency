@@ -3,14 +3,13 @@ defaultNamespace: kafka
 helm:
   repo: https://charts.bitnami.com/bitnami
   chart: kafka
-  version: "28.1.1"
+  version: "28.1.1" # Verify latest
   releaseName: kafka-main
   values:
     replicaCount: 3
     persistence:
       enabled: true
-      size: "512Mi" # Reduced from 50Gi
-    # If Zookeeper persistence is enabled, reduce its size too:
+      size: "512Mi"
     # zookeeper:
     #   persistence:
     #     size: "256Mi"
