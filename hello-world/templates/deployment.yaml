@@ -9,11 +9,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nginx-rancherhello
+      app: nginx-rancherhello4
   template:
     metadata:
       labels:
-        app: nginx-rancherhello
+        app: nginx-rancherhello123
     spec:
       containers:
       - name: nginxhelloadasdassaa
