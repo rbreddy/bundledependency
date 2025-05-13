@@ -1,0 +1,22 @@
+defaultNamespace: wordpress
+
+helm:
+  repo: https://charts.bitnami.com/bitnami
+  chart: wordpress
+  version: "19.2.2"
+  releaseName: wordpress-main
+  values:
+    wordpressUsername: admin
+    wordpressEmail: user@example.com
+    wordpressBlogName: "My Fleet Managed Blog"
+    mariadb:
+      enabled: true
+      primary:
+        persistence:
+          enabled: true
+          size: "512Mi" # Reduced from 8Gi
+    persistence:
+      enabled: true
+      size: "512Mi" # Reduced from 10Gi
+  waitForJobs: true
+  timeoutSeconds: 600

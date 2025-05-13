@@ -1,0 +1,19 @@
+defaultNamespace: postgresql-ha
+
+helm:
+  repo: https://charts.bitnami.com/bitnami
+  chart: postgresql-ha
+  version: "13.1.3"
+  releaseName: pg-ha-main
+  values:
+    postgresql:
+      persistence:
+        enabled: true
+        size: "512Mi" # Reduced from 20Gi
+    pgpool:
+      replicaCount: 2
+      persistence:
+        enabled: true
+        size: "256Mi" # Reduced from 1Gi
+  waitForJobs: true
+  timeoutSeconds: 900

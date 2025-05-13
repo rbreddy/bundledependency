@@ -1,0 +1,15 @@
+defaultNamespace: rabbitmq
+
+helm:
+  repo: https://charts.bitnami.com/bitnami
+  chart: rabbitmq
+  version: "14.2.0"
+  releaseName: rabbitmq-main
+  values:
+    replicaCount: 3
+    persistence:
+      enabled: true
+      storageClassName: "standard"
+      size: "512Mi" # Reduced from 8Gi
+  waitForJobs: true
+  timeoutSeconds: 700
