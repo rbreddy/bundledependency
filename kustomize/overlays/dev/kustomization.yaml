@@ -2,7 +2,7 @@ resources:
 - ../../base
 
 patches:
-- path: patch.yaml
+- path: redis-master.patch.yaml
   target:
     version: apps/v1
     kind: Deployment
