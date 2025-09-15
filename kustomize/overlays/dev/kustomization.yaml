@@ -1,10 +1,10 @@
 resources:
 - ../../base
 
-patchesJson6902:
-- target:
+patches:
+- path: patch.yaml
+  target:
     version: apps/v1
     kind: Deployment
     name: redis-master
     namespace: fleet-kustomize-example
-  path: ./patch.yaml
