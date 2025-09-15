@@ -1,5 +1,9 @@
-bases:
+resources:
 - ../../base
-patchesStrategicMerge:
-- redis-slave-deployment.yaml
-- redis-slave-service.yaml
+
+patches:
+- target:
+    version: apps/v1
+    kind: Deployment
+    name: redis-master
+  path: patch-redis.master.yaml
