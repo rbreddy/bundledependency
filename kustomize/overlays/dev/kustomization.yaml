@@ -6,4 +6,4 @@ patches:
     version: apps/v1
     kind: Deployment
     name: redis-master
-  path: patch-redis.master.yaml
+  path: patch-redis-master.yaml
