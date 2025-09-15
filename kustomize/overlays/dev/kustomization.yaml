@@ -4,7 +4,6 @@ resources:
 patches:
 - path: redis-master.patch.yaml
   target:
-    version: apps/v1
     kind: Deployment
     name: redis-master
 
