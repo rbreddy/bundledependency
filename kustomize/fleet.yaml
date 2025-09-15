@@ -6,7 +6,7 @@
 namespace: fleet-kustomize-example
 
 targetCustomizations:
-  - name: devices:
+  - name: dev
     kustomize:
       dir:
         overlays/dev
