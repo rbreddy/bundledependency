@@ -7,4 +7,4 @@ patches:
     version: apps/v1
     kind: Deployment
     name: redis-master
-    namespace: fleet-kustomize-example
+
