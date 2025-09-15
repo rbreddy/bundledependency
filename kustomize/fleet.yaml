@@ -6,10 +6,10 @@
 namespace: fleet-kustomize-example
 
 targetCustomizations:
-  - name: devices:
-    kustomize:
-      dir:
-        overlays/dev
-    clusterSelector:
-      matchLabels:
-        env: dev
+  - name: dev
+   kustomize:
+     dir:
+       overlays/dev
+   clusterSelector:
+     matchLabels:
+       env: dev
