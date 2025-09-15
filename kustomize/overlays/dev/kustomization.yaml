@@ -6,4 +6,5 @@ patchesJson6902:
     version: apps/v1
     kind: Deployment
     name: redis-master
+    namespace: fleet-kustomize-example
   path: ./patch-redis-master.yaml
