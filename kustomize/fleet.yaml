@@ -8,4 +8,4 @@ namespace: fleet-kustomize-example
 
 kustomize:
   # To use a kustomization.yaml different from the one in the root folder
-  dir: ""
+  dir: overlays/dev 
