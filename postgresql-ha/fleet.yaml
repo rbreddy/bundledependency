@@ -3,7 +3,7 @@ defaultNamespace: postgresql-ha
 helm:
   repo: https://charts.bitnami.com/bitnami
   chart: postgresql-ha
-  version: "17.6.0" # Verify latest
+  version: "16.3.2" # Verify latest
   releaseName: pg-ha-main
   values:
     postgresql:
