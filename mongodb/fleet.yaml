@@ -3,7 +3,7 @@ defaultNamespace: mongodb
 helm:
   repo: https://charts.bitnami.com/bitnami
   chart: mongodb
-  version: "15.7.0" # Verify latest
+  version: "17.0.0" # Verify latest
   releaseName: mongodb-main
   values:
     # architecture: "replicaset" # or "standalone"
