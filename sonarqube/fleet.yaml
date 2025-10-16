@@ -3,7 +3,7 @@ defaultNamespace: sonarqube
 helm:
   repo: https://charts.bitnami.com/bitnami
   chart: sonarqube
-  version: "11.1.0" # Verify latest
+  version: "8.1.17" # Verify latest
   releaseName: sonarqube-main
   values:
     # sonarqubePassword: "yoursonarpassword"
