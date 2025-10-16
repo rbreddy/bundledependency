@@ -3,7 +3,7 @@ defaultNamespace: wordpress
 helm:
   repo: https://charts.bitnami.com/bitnami
   chart: wordpress
-  version: "19.2.2" # Verify latest
+  version: "27.0.10" # Verify latest
   releaseName: wordpress-main
   values:
     wordpressUsername: admin
