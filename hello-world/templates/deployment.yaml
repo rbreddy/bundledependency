@@ -9,14 +9,14 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nginx-rancherhello4
+      app: nginx-rancherhello
   template:
     metadata:
       labels:
-        app: nginx-rancherhello123
+        app: nginx-rancherhello
     spec:
       containers:
       - name: nginxhelloadasdassaa
-        image: rancher/hello-world
+        image: nginx:latest
         ports:
         - containerPort: 80
