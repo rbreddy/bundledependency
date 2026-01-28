@@ -1,0 +1,7 @@
+defaultNamespace: argo
+
+helm:
+  repo: https://argoproj.github.io/argo-helm
+  chart: argo-cd
+  version: "9.3.7" # Verify latest
+  values:
