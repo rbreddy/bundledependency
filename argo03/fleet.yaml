@@ -1,0 +1,27 @@
+defaultNamespace: argo03
+dependsOn:
+  - name: argo01
+helm:
+  repo: https://argoproj.github.io/argo-helm
+  chart: argo-cd
+  version: "9.3.7"
+  values:
+    crds:
+      install: false
+    clusterRoles:
+      create: false
+    controller:
+      resources:
+        requests:
+          cpu: 10m
+          memory: 64Mi
+    repoServer:
+      resources:
+        requests:
+          cpu: 10m
+          memory: 64Mi
+    server:
+      resources:
+        requests:
+          cpu: 10m
+          memory: 64Mi
